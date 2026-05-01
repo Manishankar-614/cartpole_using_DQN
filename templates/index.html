@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CartPole DQN</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>🚀 CartPole DQN</h1>
+
+<div class="container">
+
+    <canvas id="game" width="800" height="400"></canvas>
+
+    <h2 id="score">Score: 0</h2>
+
+    <div>
+        <button onclick="startAI()">Start AI</button>
+        <button onclick="resetEnv()">Reset</button>
+        <button onclick="enableManual()">Manual</button>
+        <button onclick="toggleGraph()">Show Graph</button>
+    </div>
+
+    <!-- 📱 MOBILE BUTTON CONTROLS -->
+    <div id="mobileControls">
+        <button id="leftBtn">⬅️</button>
+        <button id="rightBtn">➡️</button>
+    </div>
+
+    <!-- 🎮 JOYSTICK -->
+    <div id="joystickContainer">
+        <div id="joystick"></div>
+    </div>
+
+    <div id="graphContainer">
+        <canvas id="chart"></canvas>
+    </div>
+
+</div>
+
+<!-- Game Over -->
+<div id="gameOverScreen">
+    <div class="overlay-box">
+        <h2>🚫 Game Over</h2>
+        <p id="finalScore"></p>
+        <button onclick="resetEnv()">Play Again</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

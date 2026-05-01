@@ -1,0 +1,6 @@
+flask
+gymnasium[classic_control]
+numpy
+torch
+matplotlib
+tk
