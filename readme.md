@@ -81,8 +81,8 @@ The model learns:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/cartpole-dqn.git
-cd cartpole-dqn
+git clone https://github.com/Manishankar-614/cartpole_using_DQN
+cd cartpole
 
 2️⃣ Create virtual environment (recommended)
 
