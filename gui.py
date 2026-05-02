@@ -35,7 +35,7 @@ class DQNApp:
         threading.Thread(target=self.train).start()
 
     def train(self):
-        episodes = 500
+        episodes = 100
 
         for e in range(episodes):
             state, _ = self.env.reset()
